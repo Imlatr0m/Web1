@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="/CSS/form.css">
+</head>
+
+<body>
+
+    <form action="/submit_registration" method="post">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="dob">Дата рождения:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="gender">Пол:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="contact-time">Удобный интервал для связи:</label><br>
+        <div class="wrapper">
+            <input type="radio" id="morning" name="contact-time" value="morning">
+            <label for="morning">Утро</label>
+            <input type="radio" id="day" name="contact-time" value="day">
+            <label for="day">День</label>
+            <input type="radio" id="evening" name="contact-time" value="evening">
+            <label for="evening">Вечер</label>
+            <input type="radio" id="night" name="contact-time" value="night">
+            <label for="night">Ночь</label><br><br>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+
+</body>
+
+</html>
