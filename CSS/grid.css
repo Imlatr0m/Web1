@@ -1,0 +1,311 @@
+
+/* playfair-display-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+  src: url('../fonts/playfair-display-v36-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* raleway-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v28-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* raleway-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/raleway-v28-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* raleway-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/raleway-v28-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+.wrapper{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header{
+    width: auto;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.grid_charts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar charts";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    align-items: center;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.grid__main {
+    display: grid;
+}
+
+.small_block {
+    grid-column: span 2;
+}
+
+.medium_block {
+    grid-column: span 3;
+}
+
+.large_block {
+    grid-column: 1/-1;
+}
+
+
+
+.item {
+    display: grid;
+    grid-column: span 1;
+    max-width: 100%;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    justify-items: center;
+    align-items: center;
+}
+
+.item img {
+    grid-column: -1/1;
+    grid-row-start: 1;
+}
+
+.item a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.logo{
+    width: 55px;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+.chart svg {
+    width: 100%;
+}
+
+.chart {
+    width: 100%;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-area: charts;
+}
+
+.logo a{
+    width: 40px;
+    height: 25px;
+    outline: none;
+    background-repeat: no-repeat;
+}
+
+.logo_text{
+    margin-top: 14.75px;
+    margin-left: 3px;
+}
+
+.logo_sign {
+
+    margin-top: 15px;
+    margin-left: 29.95px;
+    display: flex;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    color: black;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.logo_sign a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.logo_sign button{
+    background-color: #4BA87D;
+    border: 0;
+    width: 110px;
+    height: 25px;
+    padding: 0;
+    font-family: Raleway;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 118.182% */
+    letter-spacing: 0.825px;
+    transition: background-color 0.25s ease-in;
+}   
+
+.logo_sign button:hover{
+    background-color: rgb(44, 221, 103);
+}
+
+.General_Ninj{
+    color: #000;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 900;
+line-height: 26px; /* 118.182% */
+text-decoration: none;
+}
+
+.conteiner {
+    margin-left: 10px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 280px;
+}
+
+.footer-menu_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 230px;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+
+.footer-menu_list li+li{
+    margin-bottom: 7px;
+    
+}
+
+.footer-menu_list a{
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 116.667% */
+    text-decoration: none;
+}
+
+.footer-menu_list a{
+    color: #000;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 116.667% */
+    text-decoration: none;
+}
+
+footer h3{
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 19px;
+}
+
+footer p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 19px;
+
+}
+
+footer a{
+    color: #000;
+    font-family: Raleway;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px; 
+    text-decoration: none;
+}
+
+.Fotter_down{
+color: #000;
+font-family: Raleway;
+font-size: 9px;
+font-style: normal;
+font-weight: 700;
+line-height: 19px; /* 211.111% */
+}
+
+.navigation {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Terms{
+    margin-bottom: 7px;
+}
